@@ -1,0 +1,15 @@
+% rebase('base.html', title='Check Register')
+
+% if sucess == 1:
+	<div class="alert alert-success">
+  		<strong>Sucesso!</strong>
+	</div>
+% elif sucess == 0:
+	<div class="alert alert-danger">
+  		<strong>Erro!</strong> Usuário já existe.
+	</div>
+% else:
+	<div class="alert alert-danger">
+  		<strong>Erro!</strong> Senhas não conferem.
+	</div>
+% end

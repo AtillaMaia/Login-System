@@ -1,0 +1,19 @@
+body {
+    background-image: url("py-background.jpg");
+
+    height: 100%; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.vertical-offset-100{
+    padding-top:100px;
+}
+.panel-footer {
+	padding: 5px 10px;
+	text-align: left;
+	color: #A0A0A0;
+
+}
