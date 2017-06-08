@@ -2,7 +2,7 @@ from bottle import route, run
 from bottle import request, template
 from bottle import static_file, get
 from bottle import error
-import os, sys
+import os
 
 @get('/<filename:re:.*\.css>')
 def stylesheet(filename):
@@ -58,8 +58,7 @@ def error404(error):
 	return template('page_not_found')
 
 if __name__ == '__main__':
-	print (sys.version) 
-	# if os.environ.get('APP_LOCATION') == 'heroku':
-	# 	run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
-	# else:
-	# 	run(host='localhost', port=8080, debug=True, reloader=True)
+	if os.environ.get('APP_LOCATION') == 'heroku':
+		run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+	else:
+		run(host='localhost', port=8080, debug=True, reloader=True)
