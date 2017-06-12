@@ -6,7 +6,7 @@
  	</div>
   	
   	<div class="panel-body">
-    	<form accept-charset="UTF-8" role="form" action="/" method="POST">
+    	<form id="form1" accept-charset="UTF-8" role="form" action="/" method="POST">
 	        <fieldset>
 	    	  	<div class="form-group">
 	    		    <input class="form-control" placeholder="E-mail" name="email" type="email" required>
@@ -22,12 +22,12 @@
 
 	    		% end	
 	    		</div>
-	    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
+	    		<input class="btn btn-lg btn-success btn-block" type="submit" onclick="submit()" value="Login">
 	    	</fieldset>
 	    </form>
     </div>
     
     <div class="panel-footer ">
-			Don't have an account! <a href="/register" onClick=""> Sign Up Here </a>
+			Don't have an account! <a href="/register"> Sign Up Here </a>
 	</div>
 </div>
